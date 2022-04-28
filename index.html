@@ -5,8 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #pinterest-card {
+            background-image: url("https://i.pinimg.com/736x/f9/91/07/f991072d2bf2e776fffe18278c5ae03e.jpg");
+            background-size: contain;
+            display: inline-block;
+            height: 400px;
+            width: 300px ;
+            margin-top: 200px;
+            margin-left: 500px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        #save-button {
+
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="pinterest-card">
+        <div id="save-button">save</div>
+        <div id="pin-it">pin.it</div>
+        <div id="upload-button">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </div>
+        <div id="ellipses"></div>
+    </div>
 </body>
 </html>
