@@ -22,11 +22,7 @@
             overflow: hidden;
             user-select: none;
             position: relative;
-        }
-        #pinterest-card:hover {
-            box-shadow: 0px 20px 40px rgb(193, 190, 190);
-            transition: 0.3s
-        }
+        } 
         #save-button {
             background-color: rgb(238, 78, 19);
             color: white;
@@ -35,10 +31,17 @@
             top: 15px;
             right: 15px;
             border-radius: 20px;
+            cursor: pointer;
+            transform: translatey(-100px);
+            transition-timing-function: ease-in;
         }
         #pinterest-card:hover #save-button {
-            box-shadow: 0px 10px 20px rgb(70, 69, 69);
+            transform: translateX(0px);
             transition: 0.2s;
+        }
+        #pinterest-card:hover #iphone-wal {
+            transform: translateX(0px);
+            transition: 0.2s; 
         }
         #iphone-wal {
             background-color: white;
@@ -53,6 +56,9 @@
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
+            cursor: pointer;
+            transform: translatey(200px);
+            transition-timing-function: ease-in;
         }
     </style>
 </head>
@@ -61,7 +67,7 @@
         <div id="save-button">save</div>
         <div id="iphone-wal">iphoneswallpapers.com</div>
         <div id="upload-button">
-            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            <div class="fa-solid fa-arrow-up-from-bracket"></div>
         </div>
         <div id="ellipses"></div>
     </div>
